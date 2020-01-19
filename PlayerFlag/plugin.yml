@@ -1,0 +1,8 @@
+main: io.github.lfnus.Main
+name: PlayerFlag
+version: 1.0.0
+author: BlueJ
+commands:
+  playerflag:
+    description: Default description.
+    aliases: [pflag, flagplayer, flag]
