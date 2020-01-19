@@ -33,13 +33,10 @@ public class FileManager {
 
         flaggedMap = new HashMap<>();
         if(flagsConfig.get("Flagged") == null) {
-            System.out.println("Flagged section created");
             flagsConfig.createSection("Flagged");
         } else {
-            System.out.println("Flagged contained stuff");
             for(String key : flagsConfig.getConfigurationSection("Flagged").getKeys(false)) {
                 flaggedMap.put(key, flagsConfig.getString("Flagged." + key));
-                System.out.println("Added: " + key + " : " + flagsConfig.getString("Flagged." + key));
             }
         }
         saveFile();
@@ -47,9 +44,6 @@ public class FileManager {
 
     public static void addPlayer(Player target, String message) {
         flaggedMap.put(target.getUniqueId().toString(), message);
-        for(int i = 0; i < flaggedMap.size(); i++) {
-            Bukkit.getPlayer("lfn").sendMessage(flaggedMap.keySet().toString());
-        }
         flagsConfig.set("Flagged", flaggedMap);
         saveFile();
     }
@@ -58,7 +52,7 @@ public class FileManager {
         if(flaggedMap.get(target.getUniqueId().toString()) != null) {
             flagsConfig.set("Flagged." + target.getUniqueId().toString(), null);
             flaggedMap.remove(target.getUniqueId().toString());
-            player.sendMessage("Done.");
+            player.sendMessage(ChatColor.RED + "You removed " + target.getDisplayName());
             saveFile();
         } else {
             player.sendMessage(ChatColor.RED + "That player does not have a active flag.");

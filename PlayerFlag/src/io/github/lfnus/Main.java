@@ -32,15 +32,6 @@ public class Main extends JavaPlugin implements Listener {
 
     public static FileConfiguration getFileConfig() { return config; }
 
-    public static ArrayList<String> getFlags() {
-
-        List<String> flags = new ArrayList<>();
-
-
-        return (ArrayList<String>) flags;
-
-    }
-
     private final static int CENTER_PX = 154;
 
     public static void sendCenteredMessage(Player player, String message){

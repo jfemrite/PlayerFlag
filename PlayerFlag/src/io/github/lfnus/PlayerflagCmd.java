@@ -45,9 +45,7 @@ public class PlayerflagCmd implements CommandExecutor {
                         Main.sendCenteredMessage((Player) sender, "&b&m-----------------------------------------------------");
 
                     } else if(args[0].equalsIgnoreCase("create") && player.hasPermission("playerflag.create")) {
-                        System.out.println("1");
                         if(args.length > 2) {
-                            System.out.println("2");
                             StringBuilder sb = new StringBuilder();
                             for(int i = 2; i < args.length; i++) {
                                 sb.append(args[i]);

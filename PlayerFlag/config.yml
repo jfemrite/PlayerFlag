@@ -6,5 +6,5 @@ messages:
 # PERMISSIONS
 # playerflag.cmd - gives general access to do /playerflag
 # playerflag.notify - when a new playerflag is created, they are notified. And when a player joins with this permission, a message is displayed
-# playerflag.create - can create a new playerflag by /playerflag create <name> <message>
-# playerflag.remove - can remove a playerflag by /playerflag remove <name>
+# playerflag.create - can create a new playerflag by /playerflag create
+# playerflag.remove - can remove a playerflag by /playerflag remove <nam-+e>11
