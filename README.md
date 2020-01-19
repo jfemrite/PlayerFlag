@@ -1,5 +1,5 @@
 # PlayerFlag
-PlayerFlag custom plugin request (FREE)
+Custom Plugin Request (FREE SOURCECODE)
 
 **Supports 1.8-1.15**
 
@@ -10,6 +10,8 @@ Version: 1.0.0
 Author: BlueJ
 
 ** **
+
+Allows staff to flag players with messages. This simple but useful plugin manages potential cheaters in your server and gives staff an extra step-up in communication. This stores information even when the server is offline, and no database required!
 
 ```
 config.yml
